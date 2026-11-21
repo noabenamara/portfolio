@@ -27,6 +27,7 @@
                     <button onclick="switchTab('home')" id="btn-home" class="active-tab px-3 py-2 text-sm font-medium transition-colors hover:text-blue-600">Accueil</button>
                     <button onclick="switchTab('competences')" id="btn-competences" class="px-3 py-2 text-sm font-medium text-gray-500 transition-colors hover:text-blue-600">Compétences (E5)</button>
                     <button onclick="switchTab('realisations')" id="btn-realisations" class="px-3 py-2 text-sm font-medium text-gray-500 transition-colors hover:text-blue-600">Réalisations</button>
+                    <button onclick="switchTab('certifications')" id="btn-certifications" class="px-3 py-2 text-sm font-medium text-gray-500 transition-colors hover:text-blue-600">Certifications</button>
                     <button onclick="switchTab('projet-pro')" id="btn-projet-pro" class="px-3 py-2 text-sm font-medium text-gray-500 transition-colors hover:text-blue-600">Projet Pro</button>
                 </div>
             </div>
@@ -47,8 +48,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                             </svg>
                         </div>
-                        <h2 class="text-2xl font-bold">Étudiant BTS SIO</h2>
-                        <p class="mt-2 text-blue-100">Option SLAM</p>
+                        <h2 class="text-2xl font-bold">Noa Benamara</h2>
+                        <p class="mt-2 text-blue-100">BTS SIO Option SLAM</p>
                     </div>
                     <div class="md:w-2/3 p-8">
                         <h1 class="text-3xl font-bold text-gray-900 mb-4">Bienvenue sur mon Portfolio</h1>
@@ -100,8 +101,12 @@
                         <div class="mt-4 pt-4 border-t border-gray-100">
                             <h4 class="text-sm font-semibold text-gray-500 mb-2">Preuves / Réalisations associées:</h4>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Inventaire GLPI</span>
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Script Backup Auto</span>
+                                <div class="w-full">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Inventaire GLPI</span>
+                                    <img src="images/glpi/ordinateur_monitorer.png"
+                                        alt="Inventaire des ordinateurs dans GLPI"
+                                        class="block w-full h-auto mt-3 rounded-lg shadow-md">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,8 +131,21 @@
                         <div class="mt-4 pt-4 border-t border-gray-100">
                             <h4 class="text-sm font-semibold text-gray-500 mb-2">Preuves / Réalisations associées:</h4>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Tickets GLPI Résolus</span>
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Documentation Technique</span>
+                                <div class="w-full">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Tickets GLPI Résolus</span>
+                                    <img src="images/glpi/resolution_ticket.png"
+                                        alt="Résolution d'un ticket GLPI"
+                                        class="block w-full h-auto mt-3 rounded-lg shadow-md">
+                                </div>
+                                
+                                <div class="w-full">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Documentation Technique</span>
+                                    <div class="flex flex-wrap gap-3 mt-3 text-sm">
+                                        <a href="documents/DNS/documentation%20DNS.docx" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Documentation DNS</a>
+                                        <a href="documents/DHCP/documentation.docx" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Documentation DHCP</a>
+                                        <a href="documents/DHCP/schema_reseau_Gal_Cosmetics.drawio" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Schéma réseau</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -152,8 +170,7 @@
                         <div class="mt-4 pt-4 border-t border-gray-100">
                             <h4 class="text-sm font-semibold text-gray-500 mb-2">Preuves / Réalisations associées:</h4>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Refonte Site Vitrine</span>
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">SEO & Analytics</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Refonte du Site Vitrine fictive ADDA</span>
                             </div>
                         </div>
                     </div>
@@ -252,26 +269,24 @@
                 <!-- Project Card 1 -->
                 <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col">
                     <div class="h-48 bg-gray-200 relative">
-                         <!-- Generated Image Placeholder -->
-                         <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Application+Web" alt="App Web" class="w-full h-full object-cover">
+                        <!-- Generated Image Placeholder -->
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Application" alt="App" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-900">Gestion de Parc Informatique</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Fullstack</span>
+                            <h3 class="text-xl font-bold text-gray-900">Creation d'une app d'analyse</h3>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Programmation</span>
                         </div>
                         <p class="text-gray-600 text-sm mb-4 flex-1">
-                            Développement d'une application web permettant le recensement des ressources numériques et la gestion des tickets d'incidents.
+                            Développement d'une application python permettans d'extraire des information dans un fichier pdf crystal report et de l'organisee dans un fichier json.
                         </p>
                         <div class="mb-4">
                             <span class="text-xs font-medium text-gray-500">Technologies:</span>
                             <div class="flex flex-wrap gap-1 mt-1">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">PHP/Symfony</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">MySQL</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Bootstrap</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">python</span>
                             </div>
                         </div>
-                        <button class="w-full mt-auto bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir le détail</button>
+                        <a href="https://github.com/noabenamara/scraper_pdf_uniflow" class="w-full mt-auto bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir le détail</a>
                     </div>
                 </div>
 
@@ -286,42 +301,67 @@
                             <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Web</span>
                         </div>
                         <p class="text-gray-600 text-sm mb-4 flex-1">
-                            Modernisation de l'image de l'organisation, optimisation SEO et mise en conformité RGPD.
+                            Modernisation du site ADDA fictive cree sous LARAVEL.
                         </p>
                         <div class="mb-4">
                             <span class="text-xs font-medium text-gray-500">Technologies:</span>
                             <div class="flex flex-wrap gap-1 mt-1">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">HTML5/CSS3</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">JavaScript</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">CMS WordPress</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">HTML</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">CSS</span>
+                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">PHP</span>
                             </div>
                         </div>
-                        <button class="w-full mt-auto bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir le détail</button>
+                        <a href="https://github.com/noabenamara/adda_site" class="w-full mt-auto bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir le détail</a>
                     </div>
                 </div>
 
                 <!-- Project Card 3 -->
                 <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col">
                     <div class="h-48 bg-gray-200 relative">
-                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=API+REST" alt="API" class="w-full h-full object-cover">
+                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=DEV" alt="DEV" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-gray-900">API Gestion Stocks</h3>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Backend</span>
+                            <h3 class="text-xl font-bold text-gray-900">Homelab</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Fullstack</span>
                         </div>
                         <p class="text-gray-600 text-sm mb-4 flex-1">
-                            Conception d'une API RESTful pour la gestion des stocks en temps réel avec authentification JWT.
+                            Creation d'un homelab et monitoring de celle-ci.
                         </p>
-                        <div class="mb-4">
-                            <span class="text-xs font-medium text-gray-500">Technologies:</span>
-                            <div class="flex flex-wrap gap-1 mt-1">
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Node.js</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Express</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">MongoDB</span>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gray-200 relative">
+                        <img src="https://placehold.co/600x400/2f3b52/ffffff?text=CodinGame" alt="CodinGame" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Mon compte CodinGame</h3>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">Programmation</span>
                         </div>
-                        <button class="w-full mt-auto bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir le détail</button>
+                        <p class="text-gray-600 text-sm mb-4 flex-1">
+                            Retrouvez mon profil et mes activités de programmation sur CodinGame.
+                        </p>
+                        <a href="https://www.codingame.com/profile/53551c93c277fce2f3a247875707ecd49529786" target="_blank" rel="noopener noreferrer" class="w-full mt-auto text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir mon profil</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col">
+                    <div class="h-48 bg-gray-200 relative">
+                        <img src="https://placehold.co/600x400/ef4444/ffffff?text=Casse-briques" alt="Jeu casse-briques" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Jeu Casse-briques</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Travail d'équipe</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4 flex-1">
+                            La réalisation de ce jeu m'a aidé à travailler en équipe, à communiquer et à coordonner les tâches avec les autres membres du projet.
+                        </p>
+                            <a href="https://github.com/noabenamara/cassebriques" class="w-full mt-auto bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir le détail</a>
                     </div>
                 </div>
 
@@ -337,7 +377,7 @@
                     <div>
                         <h3 class="text-lg font-semibold text-blue-600 mb-2">Objectif à court terme</h3>
                         <p class="text-gray-700">
-                            Valider mon BTS SIO option SLAM en démontrant ma capacité à concevoir, développer et maintenir des solutions logicielles adaptées aux besoins métiers. Je souhaite intégrer une équipe de développement agile pour approfondir mes compétences en architecture logicielle.
+                            Valider mon BTS SIO option SLAM en démontrant ma capacité à concevoir, développer et maintenir des solutions logicielles adaptées aux besoins métiers. Je souhaite aller dans une ecole d'ingenieurie.
                         </p>
                     </div>
 
@@ -347,8 +387,7 @@
                             Pour rester compétitif, j'ai mis en place une stratégie de veille active :
                         </p>
                         <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li>Suivi des newsletters spécialisées (Developpez.com, CSS-Tricks).</li>
-                            <li>Participation à des meetups locaux sur les nouvelles technologies JS.</li>
+                            <li>Suivi des site repertoriant des fuite de données en France(FrenchBreachs, bonjourlafuite)</li>
                             <li>Utilisation de Feedly pour aggregator les blogs techniques.</li>
                         </ul>
                     </div>
@@ -360,6 +399,24 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CERTIFICATIONS -->
+        <section id="certifications" class="fade-in hidden">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-900">Mes certifications</h2>
+                <p class="text-gray-500">Retrouvez ici les certifications obtenues et les compétences validées.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white rounded-xl shadow-md p-6 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-lg font-semibold text-gray-800">Certification SecNum</h3>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Cybersécurité</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-6 flex-1">Parcours de sensibilisation à la cybersécurité et enjeux du numerique.</p>
+                    <a href="documents/certification/secnum_cert.pdf" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">Voir le certificat</a>
+                </article>
             </div>
         </section>
 
@@ -375,7 +432,7 @@
     <script>
         function switchTab(tabId) {
             // Hide all sections
-            const sections = ['home', 'competences', 'realisations', 'projet-pro'];
+            const sections = ['home', 'competences', 'realisations', 'certifications', 'projet-pro'];
             sections.forEach(id => {
                 document.getElementById(id).classList.add('hidden');
                 document.getElementById(id).classList.remove('block');
